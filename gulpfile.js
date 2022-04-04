@@ -7,12 +7,16 @@ const through2 = require("through2");
 
 const paths = {
   dest: {
-    lib: "lib", // commonjs 文件存放的目录名 - 本块关注
-    esm: "esm", // ES module 文件存放的目录名 - 暂时不关心
-    dist: "dist" // umd文件存放的目录名 - 暂时不关心
+    lib: "lib",
+    esm: "esm",
+    dist: "dist"
   },
-  styles: "src/**/*.less", // 样式文件路径 - 暂时不关心
-  scripts: ["src/**/*.{ts,tsx}", "!src/**/demo/*.{ts,tsx}"] // 脚本文件路径
+  styles: "src/**/*.less",
+  scripts: [
+    "src/**/*.{ts,tsx}",
+    "!src/**/demo/*.{ts,tsx}",
+    "!src/**/__tests__/*.{ts,tsx}"
+  ]
 };
 
 /**
