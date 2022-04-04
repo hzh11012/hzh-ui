@@ -2,9 +2,22 @@
   "name": "@hzh/hzh-ui",
   "version": "1.0.0",
   "description": "A React UI Library.",
-  "main": "lib/index.js",
+  "homepage": "https://github.com/hzh11012/hzh-ui",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "typings": "lib/index.d.ts",
+  "main": "lib/index.js",
   "module": "esm/index.js",
+  "authors": {
+    "name": "ice",
+    "email": "917944345@qq.com"
+  },
+  "files": [
+    "lib",
+    "esm"
+  ],
   "scripts": {
     "dev": "dumi dev",
     "build:site": "rimraf doc-site && dumi build",
